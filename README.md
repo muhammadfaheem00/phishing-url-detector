@@ -2,23 +2,6 @@
 
 A lightweight machine learning project to detect phishing URLs using handcrafted features and a Random Forest classifier. This tool includes a training script, a command-line interface (CLI) for quick testing, and a clean Streamlit-based web application for real-time URL checking.
 
----
-
-## 📌 Table of Contents
-
-- [Overview](#-overview)
-- [System Architecture](#-system-architecture)
-- [Tech Stack](#-tech-stack)
-- [Features](#-features)
-- [Installation](#-installation)
-- [How to Use](#-how-to-use)
-- [Project Structure](#-project-structure)
-- [Dataset](#-dataset)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-- [Credits](#-credits)
-
----
 
 ## ✅ Overview
 
@@ -77,12 +60,12 @@ Phishing websites often use deceptive URLs to trick users into providing sensiti
 
 ## 🧩 Installation
 
-# Step 1: Clone the repository
+### Step 1: Clone the repository
 ```
 git clone https://github.com/yourusername/phishing-url-detector.git
 cd phishing-url-detector
 ```
-# Step 2: Create a virtual environment (optional but recommended)
+### Step 2: Create a virtual environment (optional but recommended)
 ```
 python -m venv venv
 # For Windows:
@@ -92,13 +75,13 @@ source venv/bin/activate
 
 ```
 
-# Step 3: Install dependencies
+### Step 3: Install dependencies
 ```
 pip install -r requirements.txt
 
 ```
 
-▶️ How to Use
+## ▶️ How to Use
 🔧 Model Training (Optional)
 Use this step only if you want to retrain the model with your own dataset.
 ```
@@ -114,10 +97,8 @@ python phishing_detection_tool.py
 ```
 Then input a URL when prompted to check its legitimacy.
 
-📁 Project Structure
-bash
-Copy
-Edit
+## 📁 Project Structure
+```
 phishing-url-detector/
 │
 ├── app.py / phy.py               # Streamlit UI for real-time prediction
@@ -126,7 +107,8 @@ phishing-url-detector/
 ├── phishing_site_urls.csv        # Dataset (URLs with labels)
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project Documentation
-🧪 Dataset
+```
+## Dataset
 The model is trained on a dataset (phishing_site_urls.csv) containing URLs labeled as:
 
 1 → Phishing
@@ -137,40 +119,36 @@ Each URL undergoes custom feature extraction before being used to train a Random
 
 📌 If you're using a private dataset, please mention that users must supply their own.
 
-🚧 Future Improvements
+## Future Improvements
 Here are some ways to enhance the project:
 
-🔍 Advanced Feature Extraction
+### 🔍 Advanced Feature Extraction
 Add lexical analysis, WHOIS data, domain age, SSL certificate status, etc.
 
-🔬 Deep Learning Approaches
+### 🔬 Deep Learning Approaches
 Experiment with LSTM or CNN models on raw URL data.
 
-🌍 Live Threat Intelligence APIs
+### 🌍 Live Threat Intelligence APIs
 Integrate with APIs like VirusTotal, Google Safe Browsing, or PhishTank.
 
-🧩 Browser Extension
+### 🧩 Browser Extension
 Build a Chrome or Firefox extension using the backend model.
 
-📊 Logging & Analytics Dashboard
+### 📊 Logging & Analytics Dashboard
 Track predictions and visualize phishing attempts over time.
 
-☁️ Cloud Deployment
+### ☁️ Cloud Deployment
 Deploy the model and web app using Heroku, Streamlit Cloud, or AWS Lambda.
 
-⚖️ License
-This project is licensed under the MIT License. You’re free to use, modify, and distribute it as you like.
+---
 
 🙌 Credits
 Made with ❤️ by Faheem
 Cybersecurity Enthusiast | Python Developer
 
-yaml
-Copy
-Edit
-
----
-
 ✅ You can copy and paste this entire block directly into your `README.md` file.
+```
 
 Let me know if you'd like me to create the corresponding `LICENSE` file or `requirements.txt` too.
+
+```
